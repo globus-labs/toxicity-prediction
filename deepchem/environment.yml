@@ -6,10 +6,12 @@ channels:
   - defaults
 dependencies:
   - python==3.7.*
-  - tensorflow==1.13.*
+  - tensorflow-mkl==1.13.*
   - deepchem==2.2.*
   - jupyterlab
+  - psutil
   - pip
   - pip:
      - dlhub_sdk
+     - funcx
 
