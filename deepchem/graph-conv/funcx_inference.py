@@ -12,4 +12,3 @@ with open('func_uuid.json') as fp:
 smiles = ['C', 'CC', 'CCC']
 task_id = fxc.run(smiles, endpoint_id=theta_ep, function_id=func_id)
 print(task_id)
-

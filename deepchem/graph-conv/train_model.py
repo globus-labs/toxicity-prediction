@@ -32,6 +32,6 @@ batch_size = 50
 
 model = GraphConvModel(len(tox21_tasks), batch_size=batch_size, mode='classification', model_dir=model_dir)
 
-model.fit(train_dataset, nb_epoch=10)
+model.fit(train_dataset, nb_epoch=50)
 
 model.save()

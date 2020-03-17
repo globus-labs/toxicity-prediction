@@ -26,21 +26,24 @@ with open(os.path.join(model_dir, '..', 'tasks.json'), 'r') as fp:
 model = GraphConvModel(12, mode='classification', model_dir=model_dir, batch_size=128)
 model.restore()
 
-# Create prediction function
-smiles = ['C', 'CC', 'CCC'] 
-
-def run_inference(smiles: List[str]) -> [dict]:
-    """Run inference on the machine learning models
-
-    Args:
-        smiles ([str]): List of SMILES to evaluate
-    Returns:
-        ([dict]) Dictionary of the toxicity liklihoods
-    """
-
+# Make the inference functions
+def compute_features(smiles: List[str]) -> np.array:
+    """Compute the features for a list of molecules"""
     # Create the dataset
     mols = [Chem.MolFromSmiles(x) for x in smiles]
-    feats = np.array(feat.featurize(mols))
+    return np.array(feat.featurize(mols))
+
+
+def invoke_model(feats: np.array, smiles: List[str]) -> [dict]:
+    """Invoke the model
+    
+    Args:
+        feats (np.array): Features for the model
+        smiles ([str]): SMILES 
+    Returns:
+        ([dict]) Return the data
+    """
+    # Turn the features into a Numpy dataset
     dataset = NumpyDataset(feats, n_tasks=len(tasks))
 
     # Run inference
@@ -51,3 +54,15 @@ def run_inference(smiles: List[str]) -> [dict]:
     output = dict(zip(tasks, tox_liklihood.T))
     output['smiles'] = smiles
     return output
+
+
+def run_inference(smiles: List[str]) -> [dict]:
+    """Run inference on the machine learning models
+
+    Args:
+        smiles ([str]): List of SMILES to evaluate
+    Returns:
+        ([dict]) Dictionary of the toxicity liklihoods
+    """
+    feats = compute_features(smiles)
+    return invoke_model(feats, smiles)
