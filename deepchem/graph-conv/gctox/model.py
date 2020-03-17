@@ -1,4 +1,5 @@
 """Function for running inference"""
+from .features import compute_features
 from typing import List
 from rdkit import Chem
 import numpy as np
@@ -12,13 +13,11 @@ np.random.seed(123)
 tf.set_random_seed(123)
 import deepchem as dc
 from deepchem.data.datasets import NumpyDataset
-from deepchem.feat.graph_features import ConvMolFeaturizer
 from deepchem.models.tensorgraph.models.graph_models import GraphConvModel
 
-model_dir = os.path.join(os.path.dirname(__file__), "model")
+model_dir = os.path.join(os.path.dirname(__file__), "..", "model")
 
 # Create the featurizer and transformer
-feat = ConvMolFeaturizer()
 with open(os.path.join(model_dir, '..', 'tasks.json'), 'r') as fp:
     tasks = json.load(fp)
 
@@ -27,13 +26,6 @@ model = GraphConvModel(12, mode='classification', model_dir=model_dir, batch_siz
 model.restore()
 
 # Make the inference functions
-def compute_features(smiles: List[str]) -> np.array:
-    """Compute the features for a list of molecules"""
-    # Create the dataset
-    mols = [Chem.MolFromSmiles(x) for x in smiles]
-    return np.array(feat.featurize(mols))
-
-
 def invoke_model(feats: np.array, smiles: List[str]) -> [dict]:
     """Invoke the model
     

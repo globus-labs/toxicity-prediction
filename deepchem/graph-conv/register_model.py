@@ -19,7 +19,8 @@ def inference_function(smiles):
     start_time = datetime.utcnow().isoformat()
     
     # Pull in the inference function and run it
-    from gctox import invoke_model, compute_features
+    from gctox.model import invoke_model
+    from gctox.features import compute_features
     import numpy as np
     n_splits = min(core_count * 2, len(smiles))
     chunks = np.array_split(smiles, n_splits)

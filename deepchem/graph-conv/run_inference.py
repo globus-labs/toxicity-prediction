@@ -1,4 +1,4 @@
-from gctox import run_inference
+from gctox.model import run_inference
 
 if __name__ == '__main__':
     smiles = ['C', 'CC', 'CCC']
