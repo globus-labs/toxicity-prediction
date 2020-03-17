@@ -14,3 +14,9 @@ Then, install the utilities for running inference on the model with `pip install
 The code is designed to provide a single function to run inference on model that we can plug into many workflow 
 engines. An example for running from the command line is in `python run_inference.py`
 
+### FuncX
+
+I have registered a function in FuncX for the inference. It must be run on an endpoint configured to use a 
+Python environment with the packages described above. See `funcx_inference.py` for an example on how to run 
+the predictions. 
+
