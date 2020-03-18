@@ -14,9 +14,11 @@ def inference_function(smiles):
         from multiprocessing import Pool
         pool = Pool(core_count)
     
-    # Measure the start time
+    # Measure the start time and record host name
     from datetime import datetime
+    from platform import node
     start_time = datetime.utcnow().isoformat()
+    hostname = node()
     
     # Pull in the inference function and run it
     from gctox.model import invoke_model
@@ -33,7 +35,8 @@ def inference_function(smiles):
         'start': start_time,
         'result': result,
         'end': end_time,
-        'core_count': core_count
+        'core_count': core_count,
+        'hostname': hostname
     }
 
 # Test run
