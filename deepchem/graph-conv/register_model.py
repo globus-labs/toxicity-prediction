@@ -5,11 +5,16 @@ def inference_function(smiles):
     """Run inference on a list of smiles
     
     Uses multi-processing for intra-node parallelism"""
-    # Set the affinity for this worker.
-    #  Needed for Tensorflow, which likes to use all the cores
+    # Launch the process pool if this is the first invocation
+    #  Note: The pool will stay alive until the host process dies
+    #   OK for HPC (host dies when job completes) but be very careful
+    #   running this function on persistant servers.
     global pool 
     import os
     core_count = len(os.sched_getaffinity(0))
+    # I use the affinity rather than `os.cpu_count()` to work with aprun's
+    #  protocol for specifying the affinity of each MPI PE and all its 
+    #  child processes (including those spawned by multiprocessing)
     if 'pool' not in globals():
         from multiprocessing import Pool
         pool = Pool(core_count)
