@@ -1,7 +1,7 @@
 from funcx.sdk.client import FuncXClient
 import json
 
-def inference_function(smiles):
+def inference_function(smiles, **other_cols):
     """Run inference on a list of smiles
     
     Uses multi-processing for intra-node parallelism"""
@@ -33,6 +33,7 @@ def inference_function(smiles):
     chunks = np.array_split(smiles, n_splits)
     feats = np.concatenate(pool.map(compute_features, chunks))
     result = invoke_model(feats, smiles)
+    result.update(other_cols)
     
     # Measure the end time
     end_time = datetime.utcnow().isoformat()
@@ -45,7 +46,7 @@ def inference_function(smiles):
     }
 
 # Test run
-print(inference_function(['C', 'CCCCC']))
+print(inference_function(['C', 'CCCCC'], identifier=[1, 2]))
     
 # Make the client
 fxc = FuncXClient()
