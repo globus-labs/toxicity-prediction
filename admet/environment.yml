@@ -1,0 +1,19 @@
+name: nfp
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.7.*
+  - tensorflow-mkl==1.15.*
+  - rdkit==2020.03.1
+  - keras==2.3.*
+  - pandas>1
+  - matplotlib>3
+  - jupyterlab
+  - psutil
+  - pip
+  - pip:
+     - nfp==0.0.7
+     - dlhub_sdk
+     - funcx
+

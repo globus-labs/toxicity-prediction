@@ -1,0 +1,369 @@
+Name,SMILES,Labels,is_toxic
+Molecule 1,NC1CC(=CCC1c2cc(F)c(F)cc2F)C(=O)N3CCn4c(C3)nnc4C(F)(F)F,0,False
+Molecule 2,CC(Oc1cccc2ncnc(Nc3ccc4c(cnn4Cc5ccccn5)c3)c12)C(=O)N(C)C,0,False
+Molecule 3,CC(Oc1cccc2ncnc(Nc3ccc4c(cnn4Cc5nccs5)c3)c12)C(=O)N6CCOCC6,0,False
+Molecule 4,OC(=O)c1ccc(cc1)C2=CC3(CCNCC3)Oc4ccccc24,0,False
+Molecule 5,CCN(CC)C(=O)c1ccc(cc1)C2=CC3(CCN(CC3)C(=O)C)Oc4ccccc24,0,False
+Molecule 6,CCN(CC)C(=O)c1ccc(cc1)C2=CC3(CCN(C)CC3)Oc4ccccc24,1,True
+Molecule 7,CCN(CC)C(=O)c1ccc(cc1)C2=CC3(CCN(CC)CC3)Oc4ccccc24,0,False
+Molecule 8,CCN(CC)C(=O)c1ccc(cc1)C2=CC3(CCNCC3)Oc4c(O)cccc24,0,False
+Molecule 9,CCN(CC)C(=O)c1ccc(cc1)C2=CC3(CCNCC3)Oc4cc(O)ccc24,0,False
+Molecule 10,CCN(CC)C(=O)c1ccc(cc1)C2=CC3(CCNCC3)Oc4ccc(O)cc24,0,False
+Molecule 11,CCN(CC)C(=O)c1ccc(cc1)C2=CC3(CCNCC3)Oc4cccc(O)c24,0,False
+Molecule 12,C1CC2(CCN1)Oc3ccccc3C(=C2)c4ccccc4,1,True
+Molecule 13,Cc1ccc(cc1)C2=CC3(CCNCC3)Oc4ccccc24,1,True
+Molecule 14,FC(F)(F)c1ccc(cc1)C2=CC3(CCNCC3)Oc4ccccc24,1,True
+Molecule 15,COc1ccc(cc1)C2=CC3(CCNCC3)Oc4ccccc24,1,True
+Molecule 16,Oc1ccc(cc1)C2=CC3(CCNCC3)Oc4ccccc24,1,True
+Molecule 17,N#Cc1ccc(cc1)C2=CC3(CCNCC3)Oc4ccccc24,1,True
+Molecule 18,COC(=O)c1ccc(cc1)C2=CC3(CCNCC3)Oc4ccccc24,1,True
+Molecule 19,CCCCc1oc2ccccc2c1C(=O)c3cc(I)c(OCC)c(I)c3,0,False
+Molecule 20,CCCCc1oc2ccccc2c1C(=O)c3cc(I)c(OCC(=O)OCC)c(I)c3,0,False
+Molecule 21,CCCCc1oc2ccccc2c1C(=O)c3cc(I)c(OCCNCC)c(I)c3,1,True
+Molecule 22,CCCCc1oc2ccccc2c1C(=O)c3cc(I)c(OCCN)c(I)c3,1,True
+Molecule 23,CCCCc1oc2ccccc2c1C(=O)c3cc(I)c(OCCN(C(C)C)C(C)C)c(I)c3,0,False
+Molecule 24,CCCCc1oc2ccccc2c1C(=O)c3cc(I)c(OCC(=O)O)c(I)c3,0,False
+Molecule 25,CCCCc1oc2ccccc2c1C(=O)c3cc(I)c(OCCO)c(I)c3,0,False
+Molecule 26,CCCCc1oc2ccccc2c1C(=O)c3cc(I)c(OCCNC(=O)CC)c(I)c3,0,False
+Molecule 27,CCCCc1oc2ccccc2c1C(=O)c3cc(I)c(OCCN4CCCC4)c(I)c3,1,True
+Molecule 28,CCCCc1oc2ccccc2c1C(=O)c3cc(I)c(OCCN4CCCCC4)c(I)c3,1,True
+Molecule 29,CN1CCN(CC1)c2cccc(n2)c3cc(NC(=O)C)nc(n3)n4nc(C)cc4C,1,True
+Molecule 30,COc1cccc(c1F)c2cc(NC(=O)C)nc(n2)n3nc(C)cc3C,0,False
+Molecule 31,COc1cc(OC)cc(c1)c2cc(NC(=O)C)nc(n2)n3nc(C)cc3C,0,False
+Molecule 32,COc1cncc(c1)c2cc(NC(=O)C)nc(n2)n3nc(C)cc3C,0,False
+Molecule 33,CNC1CCCN(C1)c2c(F)cc3C(=O)C(=CN(C4CC4)c3c2OC)C(=O)O,0,False
+Molecule 34,ClC(Cl)Cl,0,False
+Molecule 35,Clc1ccc2C(=C3CCNCC3)c4ncccc4CCc2c1,0,False
+Molecule 36,CO\N=C\1/CN(CC1(C)CN)c2nc3N(C=C(C(=O)O)C(=O)c3cc2F)C4CC4,0,False
+Molecule 37,Fc1ccc(cc1)C(N2CCN(C\C=C\c3ccccc3)CC2)c4ccc(F)cc4,1,True
+Molecule 38,CO\N=C\1/CN(CC1CN)c2nc3N(C=C(C(=O)O)C(=O)c3cc2F)C4CC4,0,False
+Molecule 39,CCCOC(C(=O)OC1CCN(C)CC1)(c2ccccc2)c3ccccc3,0,False
+Molecule 40,CC(C)N1CCC(CC1)Oc2ccc3[nH]c(cc3c2)C(=O)N4CCOCC4,0,False
+Molecule 41,CC(C)N1CCC(CC1)Oc2ccc3c(c2)cc(C(=O)N4CCC(F)(F)CC4)n3C(C)C,0,False
+Molecule 42,FC(F)(F)Cn1c(cc2cc(ccc12)C(=O)N3CCN(CC3)C4CCC4)C(=O)N5CCOCC5,0,False
+Molecule 43,CC(=O)OC1CC2(C)CN3C4CC56CC(=C)C7C(O)C5C(C1)(C24)C3C6(O)C7OC(=O)C,0,False
+Molecule 44,CNC1CCN(C1)C(=O)c2ccc(Nc3ncc(F)c(n3)c4cnc(C)n4C(C)C)cc2,0,False
+Molecule 45,CC(C)n1c(C)ncc1c2nc(Nc3ccc(C(=O)NC4CCN(C)CC4)c(F)c3)ncc2F,0,False
+Molecule 46,CC(C)n1c(C)ncc1c2nc(Nc3ccc(C(=O)NCCN(C)C)c(F)c3)ncc2F,0,False
+Molecule 47,CC(C)n1c(C)ncc1c2nc(Nc3ccc(cc3)C(=O)N4CCC(C4)N(C)C)ncc2F,0,False
+Molecule 48,CC(C)n1c(C)ncc1c2nc(Nc3ccc(cc3)C(=O)N4CCCN(C)CC4)ncc2F,0,False
+Molecule 49,Fc1ccc(cc1)C(OCCN2CCN(CCCc3ccccc3)CC2)c4ccc(F)cc4,1,True
+Molecule 50,Fc1ccc(cc1)C(CCCN2CCC3(CC2)N(CNC3=O)c4ccccc4)c5ccc(F)cc5,1,True
+Molecule 51,CCC(=O)OC(Cc1ccccc1)(C(C)CNC)c2ccccc2,0,False
+Molecule 52,COc1ccc(CC2N(C)CCc3cc(OC)c(Oc4cc(CC5N(C)CCc6cc(OC)c(OC)cc56)ccc4O)cc23)cc1,0,False
+Molecule 53,COc1ccc2CC3N(C)CCC45C(Oc1c24)C(=O)CCC35O,0,False
+Molecule 54,CCC(CO)Nc1nc(NCc2ccccc2)c3ncn(C(C)C)c3n1,0,False
+Molecule 55,O=C1CCCC2C3CCCN4CCCC(CN12)C34,0,False
+Molecule 56,CN(C)C1CCN(CC(=O)Nc2cc(nc(n2)c3oc(C)cc3)n4nc(C)cc4C)C1,1,True
+Molecule 57,CCNC1CCN(CC(=O)Nc2cc(nc(n2)c3oc(C)cc3)n4nc(C)cc4C)C1,1,True
+Molecule 58,CN(C)CC1CCN(CC(=O)Nc2cc(nc(n2)c3oc(C)cc3)n4nc(C)cc4C)C1,0,False
+Molecule 59,CN(C)C1CCN(CCC(=O)Nc2cc(nc(n2)c3oc(C)cc3)n4nc(C)cc4C)C1,0,False
+Molecule 60,COCCOCC#Cc1cc(cs1)c2n[nH]c3c2Cc4cc(Cn5cncn5)ccc34,0,False
+Molecule 61,CNCCC(c1ccccc1)c2c[nH]c3ccccc23,0,False
+Molecule 62,Clc1ccc(cc1Cl)C23CNCC2C3,0,False
+Molecule 63,C(c1ccccc1)C2(CCNC2)c3ccc4[nH]ccc4c3,0,False
+Molecule 64,C(c1ccccc1)C2(CCNC2)c3ccc4sccc4c3,0,False
+Molecule 65,C(c1ccccn1)C2(CCNC2)c3ccc4[nH]ccc4c3,0,False
+Molecule 66,Fc1ccc(CC2(CCNC2)c3ccc4[nH]ccc4c3)cc1,0,False
+Molecule 67,Cn1ccc2cc(ccc12)C3(Cc4ccccc4)CCNC3,0,False
+Molecule 68,N#Cc1cc2cc(ccc2[nH]1)C3(Cc4ccccc4)CCNC3,0,False
+Molecule 69,NC(=O)c1cc2cc(ccc2[nH]1)C3(Cc4ccccc4)CCNC3,0,False
+Molecule 70,CNC(=O)c1cc2cc(ccc2[nH]1)C3(Cc4ccccc4)CCNC3,0,False
+Molecule 71,CCCCC1(CCNC1)c2ccc3[nH]ccc3c2,0,False
+Molecule 72,CC(C)n1c(C)ncc1c2ccnc(Nc3ccc(cc3)S(=O)(=O)C)n2,0,False
+Molecule 73,CC(C)n1c(C)ncc1c2ccnc(Nc3ccc(cc3)C(=O)N)n2,0,False
+Molecule 74,CNC(=O)c1ccc(Nc2nccc(n2)c3cnc(C)n3C(C)C)cc1,0,False
+Molecule 75,CC(C)n1c(C)ncc1c2ccnc(Nc3ccc(cc3)C(=O)N(C)C)n2,0,False
+Molecule 76,CC(C)n1c(C)ncc1c2ccnc(Nc3ccc(cc3)C(=O)NCCO)n2,0,False
+Molecule 77,CC(C)n1c(C)ncc1c2nc(Nc3ccc(cc3)C(=O)N)ncc2F,0,False
+Molecule 78,CNC(=O)c1ccc(Nc2ncc(F)c(n2)c3cnc(C)n3C(C)C)cc1,0,False
+Molecule 79,CC(C)n1c(C)ncc1c2nc(Nc3ccc(cc3)C(=O)N(C)C)ncc2F,0,False
+Molecule 80,CC(C)n1c(C)ncc1c2ccnc(Nc3ccc(C(=O)N)c(F)c3)n2,0,False
+Molecule 81,CNC(=O)c1ccc(Nc2nccc(n2)c3cnc(C)n3C(C)C)cc1F,0,False
+Molecule 82,CC(C)n1c(C)ncc1c2ccnc(Nc3ccc(C(=O)N(C)C)c(F)c3)n2,0,False
+Molecule 83,CC(C)n1c(C)ncc1c2nc(Nc3ccc(C(=O)N)c(F)c3)ncc2F,0,False
+Molecule 84,CNC(=O)c1ccc(Nc2ncc(F)c(n2)c3cnc(C)n3C(C)C)cc1F,0,False
+Molecule 85,CC(C)n1c(C)ncc1c2nc(Nc3ccc(C(=O)N(C)C)c(F)c3)ncc2F,0,False
+Molecule 86,CC(C)n1c(C)ncc1c2nc(Nc3ccc(C(=O)N(C)C)c(C)c3)ncc2F,0,False
+Molecule 87,CCOc1cc2ncc(C(=O)N)c(Nc3cccc(Cl)c3Cl)c2cc1N4CCN(C)CC4,0,False
+Molecule 88,CCOc1cc2ncc(C(=O)N)c(Nc3cccc(Cl)c3Cl)c2cc1N4CCN(CC)CC4,0,False
+Molecule 89,CCOc1cc2ncc(C(=O)N)c(Nc3cccc(Cl)c3Cl)c2cc1N4CCN(CC4)C(C)C,0,False
+Molecule 90,CCOc1cc2ncc(C(=O)N)c(Nc3cccc(Cl)c3Cl)c2cc1N4CCCN(C)CC4,0,False
+Molecule 91,CCOc1cc2ncc(C(=O)N)c(Nc3cccc(Cl)c3Cl)c2cc1N4CCCN(CC4)C(C)C,0,False
+Molecule 92,CCOc1cc2ncc(C(=O)N)c(Nc3cccc(Cl)c3Cl)c2cc1N4CCN(CCO)CC4,0,False
+Molecule 93,CCOc1cc2ncc(C(=O)N)c(Nc3cccc(Cl)c3Cl)c2cc1N4CCN(CC4)C(=O)C,0,False
+Molecule 94,CCOc1cc2ncc(C(=O)N)c(Nc3ccc(F)cc3F)c2cc1N4CCN(C)CC4,0,False
+Molecule 95,CCOc1cc2ncc(C(=O)N)c(Nc3ccc(F)cc3F)c2cc1N4CCN(CC)CC4,0,False
+Molecule 96,CCOc1cc2ncc(C(=O)N)c(Nc3ccc(F)cc3F)c2cc1N4CCOCC4,0,False
+Molecule 97,CCOc1cc2ncc(C(=O)N)c(Nc3ccc(F)cc3F)c2cc1N4CCC(O)CC4,0,False
+Molecule 98,CCOc1cc2ncc(C(=O)N)c(Nc3ccc(F)cc3F)c2cc1N4CCN(CC4)C5CC5,0,False
+Molecule 99,CCOc1cc2ncc(C(=O)N)c(Nc3ccc(F)c(Cl)c3)c2cc1N4CCN(C)CC4,0,False
+Molecule 100,CC(C)Oc1cc2ncc(C(=O)N)c(Nc3ccc(F)cc3F)c2cc1N4CCN(C)CC4,0,False
+Molecule 101,Cc1cnn(c1)C2CCN(CC2)c3nc4ccccc4n3Cc5ccc(F)cc5,1,True
+Molecule 102,CN(CC1CCOCC1)C2CCN(CC2)c3nc4ccccc4n3Cc5ccc(F)cc5,1,True
+Molecule 103,FC(F)(F)c1ccc(cc1)n2ccc(CN3CCC(CC3)NC(=O)COc4cccc(Cl)c4)c2,1,True
+Molecule 104,FC(F)(F)c1ccc(cc1)n2ccc(CN3CCC(CC3)NC(=O)NC(c4ccccc4)c5ccccc5)c2,0,False
+Molecule 105,Fc1ccc(cc1)C(NC(=O)CN2CCN(Cc3ccn(c3)c4ccc(cn4)C(F)(F)F)CC2)c5ccc(F)cc5,1,True
+Molecule 106,Fc1ccc(cc1)C(NC(=O)CC2CCN(Cc3ccn(c3)c4ccc(cn4)C(F)(F)F)CC2)c5ccc(F)cc5,1,True
+Molecule 107,OCCCN(Cc1ccc(F)cc1)C(=O)CC2CCN(Cc3ccn(c3)c4ccc(cc4)C(F)(F)F)CC2,1,True
+Molecule 108,COCC(O)CN(Cc1ccc(F)cc1)C(=O)CC2CCN(Cc3oc(cc3)c4ccc(Cl)cc4)CC2,0,False
+Molecule 109,OC(CNC(=O)CC1CCN(Cc2oc(cc2)c3ccc(Cl)cc3)CC1)C(F)(F)F,0,False
+Molecule 110,OCC1CCCN(C1)C(=O)CC2CCN(Cc3oc(cc3)c4ccc(Cl)cc4)CC2,0,False
+Molecule 111,OC1(CNC(=O)CC2CCN(Cc3ccn(c3)c4ccc(cc4)C(F)(F)F)CC2)CCCCC1,0,False
+Molecule 112,FC(F)(F)c1ccc(cc1)n2ccc(CN3CCC(CC(=O)NC(c4ccccc4)c5cnc[nH]5)CC3)c2,0,False
+Molecule 113,Cc1nccn1CC(NC(=O)CC2CCN(Cc3ccn(c3)c4ccc(cc4)C(F)(F)F)CC2)c5ccccc5,0,False
+Molecule 114,FC(F)(F)c1ccc(cc1)n2ccc(CN3CCC(CC(=O)NC(c4ccncc4)c5ccc(Cl)cc5)CC3)c2,0,False
+Molecule 115,Fc1ccc(cc1)C(NC(=O)CC2CCN(Cc3ccn(c3)c4ccc(cc4)C(F)(F)F)CC2)c5cccnc5,0,False
+Molecule 116,[O-][n+]1cccc(c1)C(NC(=O)CC2CCN(Cc3ccn(c3)c4ccc(cc4)C(F)(F)F)CC2)c5ccc(F)cc5,0,False
+Molecule 117,COc1ccc(cn1)C(NC(=O)CC2CCN(Cc3ccn(c3)c4ccc(cc4)C(F)(F)F)CC2)c5ccc(F)cc5,0,False
+Molecule 118,CCCCC(NC(=O)CC1CCN(Cc2ccn(c2)c3ccc(cc3)C(F)(F)F)CC1)c4ccc(OC)nc4,0,False
+Molecule 119,CCCCC(NC(=O)CC1CCN(Cc2ccn(c2)c3ccc(cc3)C(F)(F)F)CC1)C4=CNC(=O)C=C4,0,False
+Molecule 120,Fc1ccc(cc1)C(NC(=O)CC2CCN(Cc3ccn(c3)c4ccc(cc4)C(F)(F)F)CC2)C5=CNC(=O)C=C5,0,False
+Molecule 121,CC(NC(=O)CC1CCN(Cc2ccn(c2)c3ccc(cc3)C(F)(F)F)CC1)C4=CNC(=O)C=C4,0,False
+Molecule 122,FC(F)(F)c1ccc(cc1)n2ccc(CN3CCC(CC3)NC(=O)C4=CNC(=O)C(=C4)Cl)c2,0,False
+Molecule 123,Fc1ccc(cc1)S(=O)(=O)NC(=O)NC2CCN(Cc3ccn(c3)c4ccc(cc4)C(F)(F)F)CC2,0,False
+Molecule 124,Fc1cccc(CNC(=O)NC2CCN(Cc3ccn(c3)c4ccc(cc4)C(F)(F)F)CC2)c1,0,False
+Molecule 125,Fc1ccc(cc1)C2CCCN2C(=O)NC3CCN(Cc4ccn(c4)c5ccc(cc5)C(F)(F)F)CC3,0,False
+Molecule 126,FC(F)(F)c1ccc(cc1)n2ccc(CN3CCC(CC3)NC(=O)N4CCCC4c5cccnc5)c2,0,False
+Molecule 127,FC(F)(F)c1ccc(cc1)n2ccc(CN3CCC(CC3)NC(=O)N4CCCC4Cc5cccnc5)c2,0,False
+Molecule 128,COc1ccc(OC2CN(C2)C(=O)NC3CCN(Cc4ccn(c4)c5ccc(cc5)C(F)(F)F)CC3)cc1,0,False
+Molecule 129,FC(F)(F)c1ccc(cc1)n2ccc(CN3CCC(CC3)NC(=O)N4CC(C4)N5CCCOCC5)c2,0,False
+Molecule 130,FC(F)(F)c1ccc(cc1)n2ccc(CN3CCC(CC3)NC(=O)N4CC(C4)N5CCS(=O)(=O)CC5)c2,0,False
+Molecule 131,FC(F)(F)C1CCN(CC1)C2CN(C2)C(=O)NC3CCN(Cc4ccn(c4)c5ccc(cc5)C(F)(F)F)CC3,0,False
+Molecule 132,FC(F)(F)c1ccc(cc1)n2ccc(CN3CCC(CC3)NC(=O)N4CCCC(C4)C(=O)N5CCCC5)c2,0,False
+Molecule 133,CC(=O)NC1CCN(C1)C(=O)NC2CCN(Cc3ccn(c3)c4ccc(cc4)C(F)(F)F)CC2,0,False
+Molecule 134,CN1CCN(C(C1)c2ccccc2)C(=O)NC3CCN(Cc4ccn(c4)c5ccc(cc5)C(F)(F)F)CC3,0,False
+Molecule 135,OCc1cc(Cl)ccc1NC(=O)NC2CCN(Cc3ccn(c3)c4ccc(cc4)C(F)(F)F)CC2,0,False
+Molecule 136,Oc1ccccc1C2CCN(CC2)C(=O)NC3CCN(Cc4ccn(c4)c5ccc(cc5)C(F)(F)F)CC3,0,False
+Molecule 137,OC1(Cc2ccccc2)CCN(CC1)C(=O)NC3CCN(Cc4ccn(c4)c5ccc(cc5)C(F)(F)F)CC3,0,False
+Molecule 138,OCCC1CCCCN1C(=O)NC2CCN(Cc3ccn(c3)c4ccc(cc4)C(F)(F)F)CC2,0,False
+Molecule 139,OCC1CCCN(C1)C(=O)NC2CCN(Cc3ccn(c3)c4ccc(cc4)C(F)(F)F)CC2,0,False
+Molecule 140,OC1CCN(C1)C(=O)NC2CCN(Cc3ccn(c3)c4ccc(cc4)C(F)(F)F)CC2,0,False
+Molecule 141,OC1CCCCC1CNC(=O)NC2CCN(Cc3ccn(c3)c4ccc(cc4)C(F)(F)F)CC2,0,False
+Molecule 142,CN(CC1(O)CCCCC1)C(=O)NC2CCN(Cc3ccn(c3)c4ccc(cc4)C(F)(F)F)CC2,0,False
+Molecule 143,OC1(CNC(=O)NC2CCN(Cc3ccn(c3)c4ccc(cc4)C(F)(F)F)CC2)CCCCC1,0,False
+Molecule 144,FC(F)(F)c1ccc(cc1)n2ccc(CN3CCC(CC3)NC(=O)NC(Cc4cnccn4)c5ccccc5)c2,0,False
+Molecule 145,FC(F)(F)c1ccc(cc1)n2ccc(CN3CCC(CC3)NC(=O)N4CCn5cccc5C4c6ccccc6)c2,0,False
+Molecule 146,FC(F)(F)c1ccc(cc1)n2ccc(CN3CCC(CC3)NC(=O)NC(c4ccccc4)c5ncc[nH]5)c2,0,False
+Molecule 147,FC(F)(F)c1ccc(cc1)n2ccc(CN3CCC(CC3)NC(=O)NC(Cn4cccn4)c5ccccc5)c2,0,False
+Molecule 148,OCC(NC(=O)NC1CCN(Cc2ccn(c2)c3ccc(cc3)C(F)(F)F)CC1)c4ccccc4,0,False
+(2R)-N-(4-tert-butylphenyl)-N'-cyano-4-(3-fluoropyridin-2-yl)-2-methylpiperazine-1-carboximidamide,C[C@@H]1CN(CCN1\C(=N\C#N)\Nc2ccc(cc2)C(C)(C)C)c3ncccc3F,0,False
+"(4R)-4-(4-fluorophenyl)-8-[1-(4-fluorophenyl)cyclohexyl]-2,8-diazaspiro[4.5]decan-1-one",Fc1ccc(cc1)[C@H]2CNC(=O)C23CCN(CC3)C4(CCCCC4)c5ccc(F)cc5,0,False
+"1,4-Dihydroindeno[1,2-c]pyrazol_50",COCCOCC#Cc1cc(cs1)c2n[nH]c3c4ccc(CN5CCN(C)CC5)cc4C(=O)c23,0,False
+"1,4-Dihydroindeno[1,2-c]pyrazol_77",CN1CCN(Cc2ccc3c(Cc4c(n[nH]c34)c5csc(c5)C#CCOc6ccccc6)c2)C(=O)C1,0,False
+"1,4-Dihydroindeno[1,2-c]pyrazol_85",C(Oc1ccccc1)C#Cc2cc(cs2)c3n[nH]c4c3Cc5cc(Cn6cncn6)ccc45,0,False
+"1,4-Dihydroindeno[1,2-c]pyrazol_90",COCCOCC#Cc1cc(cs1)c2n[nH]c3c2Cc4ccc(Cn5cncn5)cc34,0,False
+1-bis(4-fluorophenyl)methyl piperazine,Fc1ccc(cc1)C(N2CCNCC2)c3ccc(F)cc3,0,False
+1-(4-[((4-[(4-bromo-2-fluorophenyl)amino]-6-methoxyquinazolin-7-yl}oxy)methyl]piperidin-1-yl}-2-(dimethylamino)ethanone,COc1cc2c(Nc3ccc(Br)cc3F)ncnc2cc1OCC4CCN(CC4)C(=O)CN(C)C,0,False
+2-Amino-N-pyrimidin-4-ylacetamide-1,CN1CCN(CC(=O)Nc2cc(nc(n2)c3oc(C)cc3)n4nc(C)cc4C)CC1,1,True
+2-Amino-N-pyrimidin-4-ylacetamide-2,CN1CCCN(CC(=O)Nc2cc(nc(n2)c3oc(C)cc3)n4nc(C)cc4C)CC1,1,True
+2-Amino-N-pyrimidin-4-ylacetamide-22,CN(C)CC1CCN(CC(=O)Nc2cc(nc(n2)c3oc(C)cc3)n4nc(C)cc4C)CC1,0,False
+2-Amino-N-pyrimidin-4-ylacetamide-4,CN1CCC(CC(=O)Nc2cc(nc(n2)c3oc(C)cc3)n4nc(C)cc4C)CC1,0,False
+2-Amino-N-pyrimidin-4-ylacetamide-26,CN(C)CCC(=O)Nc1cc(nc(n1)c2oc(C)cc2)n3nc(C)cc3C,1,True
+EDDP,CCC1=[N+](C)C(C)CC1(c2ccccc2)c3ccccc3,0,False
+2-Hydroxy methyl olanzapine,CN1CCN(CC1)C2=Nc3ccccc3Nc4sc(CO)cc24,0,False
+"4,4-difluorobenzhydrol",OC(c1ccc(F)cc1)c2ccc(F)cc2,0,False
+"4,4-difluorobenzophenone",Fc1ccc(cc1)C(=O)c2ccc(F)cc2,0,False
+4-Aminopyridine,Nc1ccncc1,0,False
+"5-chloro-N-(2,4-dimethoxybenzyl)-1-benzofuran-2-carboxamide",COc1ccc(CNC(=O)c2oc3ccc(Cl)cc3c2)c(OC)c1,0,False
+"5-chloro-N-[3-(10,11-dihydro-5H-dibenzo[b,f]azepin-5-yl)propyl]-N-methyl-1-benzofuran-2-carboxamide",CN(CCCN1c2ccccc2CCc3ccccc13)C(=O)c4oc5ccc(Cl)cc5c4,0,False
+9-hydroxyrisperidone(paliperidone),CC1=C(CCN2CCC(CC2)c3noc4cc(F)ccc34)C(=O)N5CCCC(O)C5=N1,0,False
+AF 3013 (NM-394) (racemate),CC1SC2=C(C(=O)O)C(=O)c3cc(F)c(cc3N12)N4CCNCC4,0,False
+ajmaline,CCC1C2CC3C4N(C)c5ccccc5C46CC(C2C6O)N3C1O,0,False
+Alfuzosin,COc1cc2nc(nc(N)c2cc1OC)N(C)CCCNC(=O)C3CCCO3,0,False
+Alosetron,Cc1nc[nH]c1CN2CCc3c(C2=O)c4ccccc4n3C,0,False
+aminomethyl tetrahydronaphthalene ketopiperazine 1,CCN(CC)Cc1ccc2C[C@H](CCc2c1)N3CCN(CCc4ccc(F)cc4)CC3=O,0,False
+aminomethyl tetrahydronaphthalene ketopiperazine 2a,CCN(CC)Cc1ccc2C[C@H](CCc2c1)N3CCN(CCc4ccc(Cl)cc4)CC3=O,0,False
+aminomethyl tetrahydronaphthalene ketopiperazine 2b,CCN(CC)Cc1ccc2C[C@H](CCc2c1)N3CCN(CCc4cccc(c4)C(F)(F)F)CC3=O,0,False
+aminomethyl tetrahydronaphthalene ketopiperazine 2c,CCN(CC)Cc1ccc2C[C@H](CCc2c1)N3CCN(CCC4CCCCC4)CC3=O,0,False
+aminomethyl tetrahydronaphthalene ketopiperazine 2d,CCN(CC)Cc1ccc2C[C@H](CCc2c1)N3CCN(CCc4cccs4)CC3=O,0,False
+aminomethyl tetrahydronaphthalene ketopiperazine 4a,Fc1ccc(CCN2CCN([C@H]3CCc4cc(CN5CCC(CC5)C(F)(F)F)ccc4C3)C(=O)C2)cc1,0,False
+aminomethyl tetrahydronaphthalene ketopiperazine 4b,Fc1ccc(CCN2CCN([C@H]3CCc4cc(Cn5ccnc5)ccc4C3)C(=O)C2)cc1,0,False
+aminomethyl tetrahydronaphthalene ketopiperazine 4e,Fc1ccc(CCN2CCN([C@H]3CCc4cc(CN5CCOCC5)ccc4C3)C(=O)C2)cc1,0,False
+aminomethyl tetrahydronaphthalene ketopiperazine 4f,CS(=O)(=O)N1CCN(Cc2ccc3C[C@H](CCc3c2)N4CCN(CCc5ccc(F)cc5)CC4=O)CC1,0,False
+aminomethyl tetrahydronaphthalene ketopiperazine 4g,Fc1ccc(CCN2CCN([C@H]3CCc4cc(CN5CCS(=O)(=O)CC5)ccc4C3)C(=O)C2)cc1,0,False
+aminomethyl tetrahydronaphthalene ketopiperazine 4h,CC(=O)N1CCN(Cc2ccc3C[C@H](CCc3c2)N4CCN(CCc5ccc(F)cc5)CC4=O)CC1,0,False
+aminomethyl tetrahydronaphthalene ketopiperazine 4i,CN(C)C(=O)C(CO)N(C)Cc1ccc2C[C@H](CCc2c1)N3CCN(CCc4ccc(F)cc4)CC3=O,0,False
+amsacrine,COc1cc(NS(=O)(=O)C)ccc1Nc2c3ccccc3nc4ccccc24,1,True
+Apomorphine hydrochloride,Cl.CN1CCc2cccc3c2C1Cc4ccc(O)c(O)c34,0,False
+Articaine,CCCNC(C)C(=O)Nc1c(C)csc1C(=O)OC,0,False
+Astemizole,COc1ccc(CCN2CCC(CC2)Nc3nc4ccccc4n3Cc5ccc(F)cc5)cc1,1,True
+Atenolol (Racemate),CC(C)NCC(O)COc1ccc(CC(=O)N)cc1,0,False
+AVE-0118,COc1ccc(CC(=O)NCc2ccccc2c3ccccc3C(=O)NCCc4cccnc4)cc1,0,False
+Azimilide,CN1CCN(CCCCN2C(=O)CN(\N=C\c3oc(cc3)c4ccc(Cl)cc4)C2=O)CC1,1,True
+BAPTA-AM,CC(=O)OCOC(=O)CN(CC(=O)OCOC(=O)C)c1ccccc1OCCOc2ccccc2N(CC(=O)OCOC(=O)C)CC(=O)OCOC(=O)C,0,False
+BCTC,CC(C)(C)c1ccc(NC(=O)N2CCN(CC2)c3ncccc3Cl)cc1,0,False
+Benperidol,Fc1ccc(cc1)C(=O)CCCN2CCC(CC2)N3C(=O)Nc4ccccc34,1,True
+Benzoylecgonine,CN1[C@H]2CC[C@@H]1[C@H]([C@H](C2)OC(=O)c3ccccc3)C(=O)O,0,False
+Bepridil,CC(C)COCC(CN(Cc1ccccc1)c2ccccc2)N3CCCC3,1,True
+Berberine,COc1ccc2cc3c4cc5OCOc5cc4CC[n+]3cc2c1OC,0,False
+Bicifadine,Cc1ccc(cc1)C23CNCC2C3,0,False
+clotrimazole,Clc1ccccc1C(c2ccccc2)(c3ccccc3)n4ccnc4,0,False
+bcml_2003_1829_06,Clc1ccc2c(c1)c(cn2C3CCCCC3)C4CCN(CCN5CCNC5=O)CC4,1,True
+BMCL_03_13_1829-1835_1,Clc1ccc2c(c1)c(cn2c3ccccc3)C4CCN(CCN5CCNC5=O)CC4,1,True
+BMCL_03_13_1829-1835_10,Fc1ccc(cc1)n2cc(C3CCN(CCN4CCNC4=S)CC3)c5ccccc25,1,True
+BMCL_03_13_1829-1835_11,CC(C)(O)c1ccc(cc1)C(O)CCCN2CCC(CC2)C(O)(c3ccccc3)c4ccccc4,1,True
+BMCL_03_13_1829-1835_12,CC(C)(C)c1ccc2c(ccn2c3ccc(F)cc3)c1,0,False
+BMCL_03_13_1829-1835_14,Fc1ccc(cc1)n2cc(C3CCNCC3)c4cc(Cl)ccc24,1,True
+BMCL_03_13_1829-1835_15,CN(C)Cc1cn(c2ccc(F)cc2)c3ccc(Cl)cc13,1,True
+BMCL_03_13_1829-1835_16,CCCc1cn(c2ccc(F)cc2)c3ccc(Cl)cc13,0,False
+BMCL_03_13_1829-1835_17,CCC(CC)c1cn(c2ccc(F)cc2)c3ccc(Cl)cc13,0,False
+BMCL_03_13_1829-1835_18,CC(O)c1cn(c2ccc(F)cc2)c3ccc(Cl)cc13,0,False
+BMCL_03_13_1829-1835_19,CCC(=O)c1cn(c2ccc(F)cc2)c3ccc(Cl)cc13,0,False
+BMCL_03_13_1829-1835_2,Fc1ccc(cc1)n2cc(C3=CCN(CCN4CCNC4=O)CC3)c5cc(Cl)ccc25,1,True
+BMCL_03_13_1829-1835_20,CCC(O)(CC)c1cn(c2ccc(F)cc2)c3ccc(Cl)cc13,0,False
+BMCL_03_13_1829-1835_21,CCC(O)c1cn(c2ccc(F)cc2)c3ccc(Cl)cc13,0,False
+BMCL_03_13_1829-1835_22,CCc1cn(c2ccc(F)cc2)c3ccc(Cl)cc13,0,False
+BMCL_03_13_1829-1835_23,CC(=O)c1cn(c2ccc(F)cc2)c3ccc(Cl)cc13,0,False
+BMCL_03_13_1829-1835_3,Fc1ccc(cc1)n2cc(C3CCN(CCN4CCNC4=O)CC3)c5ccccc25,1,True
+BMCL_03_13_1829-1835_4,OC(=O)Cc1ccc(cc1)n2cc(C3CCN(CCN4CCNC4=O)CC3)c5cc(Cl)ccc25,1,True
+BMCL_03_13_1829-1835_5,OC(=O)c1ccc(cc1)n2cc(C3CCN(CCN4CCNC4=O)CC3)c5cc(Cl)ccc25,0,False
+BMCL_03_13_1829-1835_7,COC(=O)Cc1ccc(cc1)n2cc(C3CCN(CCN4CCNC4=O)CC3)c5cc(Cl)ccc25,1,True
+BMCL_03_13_1829-1835_8,COC(=O)c1ccc(cc1)n2cc(C3CCN(CCN4CCNC4=O)CC3)c5cc(Cl)ccc25,1,True
+BMCL_03_13_1829-1835_9,CC(C)c1cn(c2ccc(F)cc2)c3ccc(Cl)cc13,0,False
+BMCL_2006_1207_1,C[C@@H]1CNC[C@@H]2Cc3ccc(Cl)c(C)c3N12,0,False
+BRL-32872,Cl.COc1ccc(CCN(C)CCCN(C(=O)c2ccc(cc2)[N+](=O)[O-])c3ccc(OC)c(OC)c3)cc1OC,1,True
+Buprenorphine,CO[C@]12CC[C@@]3(C[C@@H]1[C@](C)(O)C(C)(C)C)[C@H]4Cc5ccc(O)c6O[C@@H]2[C@]3(CCN4CC7CC7)c56,0,False
+Bupropion,CC(NC(C)(C)C)C(=O)c1cccc(Cl)c1,0,False
+Buspirone,O=C1CC2(CCCC2)CC(=O)N1CCCCN3CCN(CC3)c4ncccn4,0,False
+Canrenoic Acid,C[C@]12CCC(=O)C=C1C=C[C@@H]3[C@@H]2CC[C@@]4(C)[C@H]3CC[C@]4(O)CCC(=O)O,0,False
+Carbamazepine,NC(=O)N1c2ccccc2C=Cc3ccccc13,0,False
+Carvedilol (Racemate),COc1ccccc1OCCNCC(O)COc2cccc3[nH]c4ccccc4c23,1,True
+Celecoxib,Cc1ccc(cc1)c2cc(nn2c3ccc(cc3)S(=O)(=O)N)C(F)(F)F,0,False
+Chlorobutanol,CC(C)(O)C(Cl)(Cl)Cl,0,False
+Chloroquine,CCN(CC)CCCC(C)Nc1ccnc2cc(Cl)ccc12,0,False
+Chlorpheniramine,CN(C)CCC(c1ccc(Cl)cc1)c2ccccn2,0,False
+cibenzoline,C1CN=C(N1)C2CC2(c3ccccc3)c4ccccc4,0,False
+Cimetidine,CN\C(=N/C#N)\NCCSCc1nc[nH]c1C,0,False
+Ciprofloxacin,OC(=O)C1=CN(C2CC2)c3cc(N4CCNCC4)c(F)cc3C1=O,0,False
+Cisapride hydrate,O.CO[C@H]1CN(CCCOc2ccc(F)cc2)CC[C@H]1NC(=O)c3cc(Cl)c(N)cc3OC,1,True
+citalopram (racemate),CN(C)CCCC1(OCc2cc(ccc12)C#N)c3ccc(F)cc3,0,False
+clobutinol,CC(CN(C)C)C(C)(O)Cc1ccc(Cl)cc1,0,False
+CJ-033466,CC(C)CN1CCC(CNC(=O)c2cc(Cl)c(N)n3cc(C)nc23)CC1,0,False
+Clarithromycin,CC[C@H]1OC(=O)[C@H](C)C(O[C@H]2C[C@@](C)(OC)[C@@H](O)[C@H](C)O2)[C@H](C)[C@@H](O[C@@H]3O[C@H](C)C[C@@H]([C@H]3O)N(C)C)[C@@](C)(C[C@@H](C)C(=O)[C@H](C)[C@@H](O)[C@]1(C)O)OC,0,False
+Clebopride,COc1cc(N)c(Cl)cc1C(=O)NC2CCN(Cc3ccccc3)CC2,1,True
+N-{(1S)-2-[(3S)-3-hydroxypyrrolidin-1-yl]-1-phenylethyl}-N-methyl-2-(4-{[(methylsulfonyl)amino]methyl}phenyl)acetamide,CN(C(CN1CCC(O)C1)c2ccccc2)C(=O)Cc3ccc(CNS(=O)(=O)C)cc3,0,False
+Clofilium phosphate,CCCCCCC[N+](CC)(CC)CCCCc1ccc(Cl)cc1.OP(=O)(O)[O-],1,True
+clomifene,CCN(CC)CCOc1ccc(cc1)\C(=C(/Cl)\c2ccccc2)\c3ccccc3,1,True
+Cocaethylene,CCOC(=O)[C@H]1[C@H](C[C@@H]2CC[C@H]1N2C)OC(=O)c3ccccc3,0,False
+Codeine,COc1ccc2CC3C4C=CC(O)C5Oc1c2C45CCN3C,0,False
+Cyamemazine (racemate),CC(CN(C)C)CN1c2ccccc2Sc3ccc(cc13)C#N,1,True
+Desipramine,CNCCCN1c2ccccc2CCc3ccccc13,0,False
+Desmethylastemizole,Oc1ccc(CCN2CCC(CC2)Nc3nc4ccccc4n3Cc5ccc(F)cc5)cc1,1,True
+Nitrendipine,CCOC(=O)C1=C(C)NC(=C(C1c2cccc(c2)N(=O)=O)C(=O)OC)C,0,False
+Diphenhydramine,CN(C)CCOC(c1ccccc1)c2ccccc2,0,False
+Dofetilide,CN(CCOc1ccc(NS(=O)(=O)C)cc1)CCc2ccc(NS(=O)(=O)C)cc2,1,True
+Dolasetron,O=C(O[C@@H]1C[C@@H]2C[C@@H]3C[C@H](C1)N2CC3=O)c4c[nH]c5ccccc45,0,False
+Domperidone,Clc1ccc2N(C3CCN(CCCN4C(=O)Nc5ccccc45)CC3)C(=O)Nc2c1,1,True
+Donepezil,COc1cc2CC(CC3CCN(Cc4ccccc4)CC3)C(=O)c2cc1OC,0,False
+dronedarone,CCCCN(CCCC)CCCOc1ccc(cc1)C(=O)c2c(CCCC)oc3ccc(NS(=O)(=O)C)cc23,1,True
+droperidol,Fc1ccc(cc1)C(=O)CCCN2CCC(=CC2)N3C(=O)Nc4ccccc34,1,True
+DW-224a,CO\N=C\1/CN(CC12CNC2)c3nc4N(C=C(C(=O)O)C(=O)c4cc3F)C5CC5,0,False
+E-4031,Cc1cccc(CCN2CCC(CC2)C(=O)c3ccc(NS(=O)(=O)C)cc3)n1,1,True
+Ecgonine methyl ester,COC(=O)[C@H]1[C@@H](O)C[C@@H]2CC[C@H]1N2C,0,False
+Chromanol 293B,CCS(=O)(=O)N(C)C1C(O)C(C)(C)Oc2ccc(cc12)C#N,0,False
+EGCG,Oc1cc(O)c2CC(OC(=O)c3cc(O)c(O)c(O)c3)C(Oc2c1)c4cc(O)c(O)c(O)c4,0,False
+lumefantrine,CCCCN(CCCC)CC(O)c1cc(Cl)cc2\C(=C/c3ccc(Cl)cc3)\c4cc(Cl)ccc4c12,0,False
+ER-118585,COc1ccc(CNc2nnc(N3CCC4(CC3)CC(O)C4)c5ccc(cc25)C#N)cc1Cl,1,True
+Erythromycin,CC[C@H]1OC(=O)[C@H](C)C(O[C@H]2C[C@@](C)(OC)[C@@H](O)[C@H](C)O2)[C@H](C)[C@@H](O[C@@H]3O[C@H](C)C[C@@H]([C@H]3O)N(C)C)[C@](C)(O)C[C@@H](C)C(=O)[C@H](C)[C@@H](O)[C@]1(C)O,0,False
+Erythromycylamine,CC[C@H]1OC(=O)[C@H](C)[C@@H](O[C@H]2C[C@@](C)(OC)[C@@H](O)[C@H](C)O2)[C@H](C)[C@@H](O[C@@H]3O[C@H](C)C[C@@H]([C@H]3O)N(C)C)[C@](C)(O)C[C@@H](C)[C@H](N)[C@H](C)[C@@H](O)[C@]1(C)O,0,False
+Estradiol,CC12CCC3C(CCc4cc(O)ccc34)C1CCC2O,0,False
+Famotidine,NC(=Nc1nc(CSCC\C(=N\S(=O)(=O)N)\N)cs1)N,0,False
+Fentanyl,CCC(=O)N(C1CCN(CCc2ccccc2)CC1)c3ccccc3,0,False
+Fexofenadine hydrochloride,Cl.CC(C)(C(=O)O)c1ccc(cc1)C(O)CCCN2CCC(CC2)C(O)(c3ccccc3)c4ccccc4,0,False
+Flecainide,FC(F)(F)COc1ccc(OCC(F)(F)F)c(c1)C(=O)NCC2CCCCN2,0,False
+Gatifloxacin(am1155),COc1c(N2CCNC(C)C2)c(F)cc3C(=O)C(=CN(C4CC4)c13)C(=O)O,0,False
+Granisetron hydrochloride,Cl.CN1[C@@H]2CCC[C@H]1C[C@H](C2)NC(=O)c3nn(C)c4ccccc34,0,False
+Grepafloxacin,CC1CN(CCN1)c2cc3N(C=C(C(=O)O)C(=O)c3c(C)c2F)C4CC4,0,False
+Halofantrine,CCCCN(CCCC)CC[C@H](O)c1cc2c(Cl)cc(Cl)cc2c3cc(ccc13)C(F)(F)F,1,True
+Haloperidol,OC1(CCN(CCCC(=O)c2ccc(F)cc2)CC1)c3ccc(Cl)cc3,1,True
+HY-2901,CC(C)(CN1CCC(=C2c3ccc(F)cc3COc4ccccc24)CC1)C(=O)O,0,False
+ICI-118551,CC(C)NC(C)C(O)COc1ccc(C)c2CCCc12,0,False
+Ifenprodil,CC(C(O)c1ccc(O)cc1)N2CCC(Cc3ccccc3)CC2,1,True
+Indometacin,COc1ccc2c(c1)c(CC(=O)O)c(C)n2C(=O)c3ccc(Cl)cc3,0,False
+Irbesartan,CCCCC1=NC2(CCCC2)C(=O)N1Cc3ccc(cc3)c4ccccc4c5nnn[nH]5,0,False
+Isradipine,COC(=O)C1=C(C)NC(=C(C1c2cccc3nonc23)C(=O)OC(C)C)C,0,False
+Josamycin,CO[C@H]1[C@@H](CC(=O)O[C@H](C)C\C=C\C=C\[C@H](O)[C@H](C)C[C@H](CC=O)[C@@H]1O[C@@H]2O[C@H](C)[C@@H](O[C@H]3C[C@@](C)(O)[C@@H](OC(=O)CC(C)C)[C@H](C)O3)[C@@H]([C@H]2O)N(C)C)OC(=O)C,0,False
+Ketanserin,Fc1ccc(cc1)C(=O)C2CCN(CCN3C(=O)Nc4ccccc4C3=O)CC2,1,True
+Ketoconazole,CC(=O)N1CCN(CC1)c2ccc(OC[C@@H]3CO[C@](Cn4ccnc4)(O3)c5ccc(Cl)cc5Cl)cc2,0,False
+L-alpha-Acetylmethadol,CC[C@H](OC(=O)C)C(C[C@H](C)N(C)C)(c1ccccc1)c2ccccc2,0,False
+lamotrigine,Nc1nnc(c(N)n1)c2cccc(Cl)c2Cl,0,False
+Levobupivacaine hydrochloride,Cl.CCCCN1CCCC[C@H]1C(=O)Nc2c(C)cccc2C,0,False
+Levofloxacin,C[C@H]1COc2c(N3CCN(C)CC3)c(F)cc4C(=O)C(=CN1c24)C(=O)O,0,False
+Lidoflazine,Cc1cccc(C)c1NC(=O)CN2CCN(CCCC(c3ccc(F)cc3)c4ccc(F)cc4)CC2,1,True
+Lignocaine,CCN(CC)CC(=O)Nc1c(C)cccc1C,0,False
+Lomefloxacin,CCN1C=C(C(=O)O)C(=O)c2cc(F)c(N3CCNC(C)C3)c(F)c12,0,False
+Lopinavir,CC(C)[C@H](N1CCCNC1=O)C(=O)N[C@H](C[C@H](O)[C@H](Cc2ccccc2)NC(=O)COc3c(C)cccc3C)Cc4ccccc4,0,False
+bmcl_2006_1775_c19,N[C@@H](C1CC1)C(=O)N2CC(=C[C@H]2c3ccccc3)c4cc(F)ccc4F,0,False
+LY-97241,CCCCCCCN(CC)CCCCc1ccc(cc1)[N+](=O)[O-],1,True
+M-43068,CC(C)(NC(=O)c1ccc(O)cc1)C(=O)O,0,False
+Maraviroc,CC(C)c1nnc(C)n1[C@@H]2C[C@H]3CC[C@@H](C2)N3CC[C@H](NC(=O)C4CCC(F)(F)CC4)c5ccccc5,0,False
+JMC_2006_6569_22,Fc1ccc2C(=O)C=C(Oc2c1)C(=O)NC3CCN(Cc4ccc5OCOc5c4)CC3,0,False
+Mefloquine,O[C@H](C1CCCCN1)c2cc(nc3c(cccc23)C(F)(F)F)C(F)(F)F,0,False
+Mepivacaine (racemate),CN1CCCCC1C(=O)Nc2c(C)cccc2C,0,False
+Methyl ecgonidine,COC(=O)C1=CC[C@@H]2CC[C@H]1N2C,0,False
+metoclopramide,CCN(CC)CCNC(=O)c1cc(Cl)c(N)cc1OC,0,False
+Metoprolol (racemate),COCCc1ccc(OCC(O)CNC(C)C)cc1,0,False
+bmcl_2006_5855_c29,CCc1c(CC)n(C)c2CCC\C(=N/OC(=O)Nc3ccccc3)\c12,0,False
+Mibefradil,COCC(=O)O[C@]1(CCN(C)CCCc2nc3ccccc3[nH]2)CCc4cc(F)ccc4[C@@H]1C(C)C,0,False
+miconazole,Clc1ccc(COC(Cn2ccnc2)c3ccc(Cl)cc3Cl)c(Cl)c1,0,False
+Mizolastine,CN(C1CCN(CC1)c2nc3ccccc3n2Cc4ccc(F)cc4)C5=NC=CC(=O)N5,1,True
+MK-499,CS(=O)(=O)Nc1ccc2OC3(CCN(CC3)C4CCc5cc(ccc5C4)C#N)CC(O)c2c1,1,True
+Morphine,CN1CCC23C4Oc5c(O)ccc(CC1C2C=CC4O)c35,0,False
+N-Demethylerythromycin,CC[C@H]1OC(=O)[C@H](C)[C@@H](O[C@H]2C[C@@](C)(OC)[C@@H](O)[C@H](C)O2)[C@H](C)[C@@H](O[C@@H]3O[C@H](C)C[C@H](NC)[C@H]3O)[C@@](C)(O)C[C@@H](C)C(=O)[C@H](C)[C@@H](O)[C@]1(C)O,0,False
+N-Demethylolanzapine,Cc1cc2C(=Nc3ccccc3Nc2s1)N4CCNCC4,0,False
+N-Desbutylhalofantrine,CCCCNCCC(O)c1cc2c(Cl)cc(Cl)cc2c3cc(ccc13)C(F)(F)F,1,True
+N-Desmethylclozapine,Clc1ccc2Nc3ccccc3C(=Nc2c1)N4CCNCC4,0,False
+Naringenin,Oc1ccc(cc1)[C@@H]2CC(=O)c3c(O)cc(O)cc3O2,0,False
+Nelfinavir,Cc1c(O)cccc1C(=O)N[C@@H](CSc2ccccc2)[C@H](O)CN3C[C@H]4CCCC[C@H]4C[C@H]3C(=O)NC(C)(C)C,0,False
+Nicotine,CN1CCC[C@H]1c2cccnc2,0,False
+Nifedipine,COC(=O)C1=C(C)NC(=C(C1c2ccccc2[N+](=O)[O-])C(=O)OC)C,0,False
+NIP-142,COc1ccc(CC(=O)Nc2cc3[C@H](NC4CC4)[C@@H](O)C(C)(C)Oc3cc2[N+](=O)[O-])cc1,0,False
+Noracetylmethadol,CCC(OC(=O)C)C(CC(C)NC)(c1ccccc1)c2ccccc2,0,False
+Norastemizole,Fc1ccc(Cn2c(NC3CCNCC3)nc4ccccc24)cc1,1,True
+Norfluoxetine,NCCC(Oc1ccc(cc1)C(F)(F)F)c2ccccc2,0,False
+Ondansetron,Cc1nccn1CC2CCc3c(C2=O)c4ccccc4n3C,1,True
+Orphenadrine,CN(C)CCOC(c1ccccc1)c2ccccc2C,1,True
+Oxatomide,O=C1Nc2ccccc2N1CCCN3CCN(CC3)C(c4ccccc4)c5ccccc5,1,True
+Pergolide mesylate,CCCN1C[C@H](CSC)C[C@H]2[C@H]1Cc3c[nH]c4cccc2c34.CS(=O)(=O)O,1,True
+Perhexiline,C(C(C1CCCCC1)C2CCCCC2)C3CCCCN3,0,False
+perphenazine,OCCN1CCN(CCCN2c3ccccc3Sc4ccc(Cl)cc24)CC1,0,False
+Phenobarbital,CCC1(C(=O)NC(=O)NC1=O)c2ccccc2,0,False
+Phenytoin,O=C1NC(=O)C(N1)(c2ccccc2)c3ccccc3,0,False
+pilsicainide,Cc1cccc(C)c1NC(=O)CC23CCCN2CCC3,0,False
+Pimozide,Fc1ccc(cc1)C(CCCN2CCC(CC2)N3C(=O)Nc4ccccc34)c5ccc(F)cc5,1,True
+prazosin,COc1cc2nc(nc(N)c2cc1OC)N3CCN(CC3)C(=O)c4occc4,0,False
+Prenylamine,CC(Cc1ccccc1)NCCC(c2ccccc2)c3ccccc3,1,True
+Procainamide hydrochloride,Cl.CCN(CC)CCNC(=O)c1ccc(N)cc1,0,False
+Protriptyline,CNCCCC1c2ccccc2C=Cc3ccccc13,0,False
+Prucalopride,COCCCN1CCC(CC1)NC(=O)c2cc(Cl)c(N)c3CCOc23,0,False
+Prulifloxacin,CC1SC2=C(C(=O)O)C(=O)c3cc(F)c(cc3N12)N4CCN(CC5=C(C)OC(=O)O5)CC4,0,False
+Pyrilamine,COc1ccc(CN(CCN(C)C)c2ccccn2)cc1,0,False
+Renzapride,COc1cc(N)c(Cl)cc1C(=O)N[C@@H]2CCN3CCC[C@H]2C3,0,False
+Ritonavir,CC(C)[C@H](NC(=O)N(C)Cc1csc(n1)C(C)C)C(=O)N[C@H](C[C@H](O)[C@H](Cc2ccccc2)NC(=O)OCc3cncs3)Cc4ccccc4,0,False
+Ropivacaine hydrochloride,O.Cl.CCCN1CCCC[C@H]1C(=O)Nc2c(C)cccc2C,0,False
+Roxithromycin,CC[C@H]1OC(=O)[C@H](C)C(O[C@H]2C[C@@](C)(OC)[C@@H](O)[C@H](C)O2)[C@H](C)[C@@H](O[C@@H]3O[C@H](C)C[C@@H]([C@H]3O)N(C)C)[C@](C)(O)C[C@@H](C)\C(=N\OCOCCOC)\[C@H](C)[C@@H](O)[C@]1(C)O,0,False
+Saquinavir,CC(C)(C)NC(=O)[C@@H]1C[C@@H]2CCCC[C@@H]2CN1C[C@@H](O)[C@H](Cc3ccccc3)NC(=O)[C@H](CC(=O)N)NC(=O)c4ccc5ccccc5n4,0,False
+Sertindole,Fc1ccc(cc1)n2cc(C3CCN(CCN4CCNC4=O)CC3)c5cc(Cl)ccc25,1,True
+Sertraline,CN[C@H]1CC[C@@H](c2ccc(Cl)c(Cl)c2)c3ccccc13,0,False
+Sophocarpine,O=C1C=CC[C@@H]2[C@H]3CCCN4CCC[C@@H](CN12)[C@@H]34,0,False
+Sotalol,CC(C)NCC(O)c1ccc(NS(=O)(=O)C)cc1,0,False
+Sparfloxacin,C[C@@H]1CN(C[C@H](C)N1)c2c(F)c(N)c3C(=O)C(=CN(C4CC4)c3c2F)C(=O)O,0,False
+Spironolactone,CC(=O)S[C@@H]1CC2=CC(=O)CC[C@]2(C)[C@H]3CC[C@@]4(C)[C@@H](CC[C@@]45CCC(=O)O5)C13,0,False
+sulfamethoxazole,Cc1onc(NS(=O)(=O)c2ccc(N)cc2)c1,0,False
+Tadalafil,CN1CC(=O)N2[C@H](Cc3c([nH]c4ccccc34)[C@H]2c5ccc6OCOc6c5)C1=O,0,False
+tamsulosin,CCOc1ccccc1OCCNC(C)Cc2ccc(OC)c(c2)S(=O)(=O)N,0,False
+Telithromycin,CC[C@H]1OC(=O)[C@H](C)C(=O)[C@H](C)[C@@H](O[C@@H]2O[C@H](C)C[C@@H]([C@H]2O)N(C)C)[C@@](C)(C[C@@H](C)C(=O)[C@H](C)[C@H]3N(CCCCn4cnc(c4)c5cccnc5)C(=O)O[C@]13C)OC,0,False
+Terazosin,COc1cc2nc(nc(N)c2cc1OC)N3CCN(CC3)C(=O)C4CCCO4,0,False
+Terfenadine,CC(C)(C)c1ccc(cc1)C(O)CCCN2CCC(CC2)C(O)(c3ccccc3)c4ccccc4,1,True
+Tolterodine tartrate,CC(C)N(CC[C@H](c1ccccc1)c2cc(C)ccc2O)C(C)C.O[C@H]([C@@H](O)C(=O)O)C(=O)O,1,True
+Cetirizine,OC(=O)COCCN1CCN(CC1)C(c2ccccc2)c3ccc(Cl)cc3,0,False
+Vardenafil,CCCc1nc(C)c2C(=O)N=C(Nn12)c3cc(ccc3OCC)S(=O)(=O)N4CCN(CC)CC4,0,False
+Vinpocetine,CCOC(=O)C1=C[C@]2(CC)CCCN3CCc4c([C@@H]23)n1c5ccccc45,1,True
+Zafirlukast,COc1cc(ccc1Cc2cn(C)c3ccc(NC(=O)OC4CCCC4)cc23)C(=O)NS(=O)(=O)c5ccccc5C,0,False
+Ziprasidone,Clc1cc2NC(=O)Cc2cc1CCN3CCN(CC3)c4nsc5ccccc45,1,True
+jmc_51_5893_c12,CCN(CC)C(=O)c1cccc(c1)C2=CC3(CCNCC3)Oc4ccccc24,1,True
+Promethazine,CC(CN1c2ccccc2Sc3ccccc13)N(C)C,0,False
+bmcl_2009_3253_c1,CN(C)[C@@H]1CCC[C@H]1Nc2nc(Nc3ccc(cc3)S(=O)(=O)C)ncc2C(F)(F)F,0,False
+jmc_51_5893_c11,CCN(CC)C(=O)c1ccc(cc1)C2=CC3(CCNCC3)Oc4ccccc24,0,False
+jmc_51_5893_c13,CCN(CC)C(=O)c1ccccc1C2=CC3(CCNCC3)Oc4ccccc24,0,False
