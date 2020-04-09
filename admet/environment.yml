@@ -1,4 +1,4 @@
-name: nfp
+name: admet
 channels:
   - conda-forge
   - defaults
@@ -9,11 +9,13 @@ dependencies:
   - keras==2.3.*
   - pandas>1
   - matplotlib>3
+  - openbabel==2.4.*
+  - scikit-learn
   - jupyterlab
+  - pytest
   - psutil
   - pip
   - pip:
      - nfp==0.0.7
      - dlhub_sdk
      - funcx
-
