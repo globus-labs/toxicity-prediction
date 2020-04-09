@@ -1,5 +1,7 @@
 from parsl.executors import HighThroughputExecutor
-from parsl.providers import LocalProvider
+from parsl.addresses import address_by_hostname
+from parsl.providers import CobaltProvider
+from parsl.launchers import AprunLauncher
 from parsl.config import Config
 from parsl import python_app
 import parsl
@@ -29,7 +31,7 @@ def inference_function(smiles, **other_cols):
     #  Note: The pool will stay alive until the host process dies
     #   OK for HPC (host dies when job completes) but be very careful
     #   running this function on persistant servers.
-    #global pool 
+    global pool 
     import os
     core_count = len(os.sched_getaffinity(0))
     # I use the affinity rather than `os.cpu_count()` to work with aprun's
@@ -91,7 +93,7 @@ if __name__ == "__main__":
     # Get the path to the file to screen
     parser = argparse.ArgumentParser()
     parser.add_argument("--batch-size", help="Number of SMILES strings to send per batch",
-                       default=1024, type=int)
+                       default=16384, type=int)
     parser.add_argument("--local-workers", help="Number of workers to use for SMILES validation",
                        default=None, type=int)
     parser.add_argument("file", help="Path to the input file")
@@ -115,12 +117,26 @@ if __name__ == "__main__":
     config = Config(
         executors=[
             HighThroughputExecutor(
-                address="localhost",
+                address=address_by_hostname(),
                 label="htex",
                 max_workers=1,
-                provider=LocalProvider(
+                provider=CobaltProvider(
+                    queue='CVD_Research',
+                    account='CVD_Research',
+                    launcher=AprunLauncher(overrides="-d 64 --cc depth"),
+                    walltime='3:00:00',
+                    nodes_per_block=64,
                     init_blocks=1,
-                    max_blocks=1
+                    min_blocks=1,
+                    max_blocks=4,
+                    scheduler_options='#COBALT --attrs enable_ssh=1',
+                    worker_init='''
+module load miniconda-3
+source activate /home/lward/exalearn/covid/toxicity-prediction/deepchem/env
+export KMP_AFFINITY=disabled
+which python
+                    ''',
+                    cmd_timeout=120,
                 ),
             ),
         ],
