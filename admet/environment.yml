@@ -16,6 +16,7 @@ dependencies:
   - psutil
   - pip
   - pip:
+     - -e .
      - nfp==0.0.7
      - dlhub_sdk
      - funcx
