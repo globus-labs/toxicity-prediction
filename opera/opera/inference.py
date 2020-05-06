@@ -68,7 +68,7 @@ def inference_function(smiles, **other_cols):
                    '-o', output_path, '-Tox', '-P', str(core_count)]
         stdout = os.path.join(td, 'stdout')
         with open(stdout, 'w') as so:
-            proc = Popen(command, stderr=STDOUT, stdout=so)
+            proc = Popen(command, stderr=STDOUT, stdout=so, cwd=td)
             rc = proc.wait()
 
         # If there is a non-zero error, raise an exception with that content
