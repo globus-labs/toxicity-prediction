@@ -27,11 +27,8 @@ NullPointerException = JavaException
 sp = cdk.smiles.SmilesParser(cdk.DefaultChemObjectBuilder.getInstance())
 
 
-def is_valid_smiles(smiles: str):
+def parse_molecule(smiles: str):
     """Make sure a SMILE string is valid"""
 
-    try:
-        sp.parseSmiles(smiles)
-    except InvalidSmilesException:
-        return False
-    return True
+    mol = sp.parseSmiles(smiles)
+    return mol

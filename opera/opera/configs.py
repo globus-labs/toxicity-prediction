@@ -3,6 +3,12 @@ from parsl.addresses import address_by_hostname
 from parsl.config import Config
 from parsl.launchers import AprunLauncher
 from parsl.providers import LocalProvider, CobaltProvider
+import os
+
+# Read in the environmental variables
+with open(os.path.join(os.path.dirname(__file__), '..', 'set_envs.sh')) as fp:
+    envs = fp.read()
+
 
 local_config = Config(
     executors=[
