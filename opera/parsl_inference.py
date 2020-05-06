@@ -8,7 +8,7 @@ import argparse
 import logging
 import os
 
-from opera.configs import local_config as config
+from opera.configs import config as config
 from opera.inference import inference_function
 
 
@@ -55,7 +55,7 @@ if __name__ == "__main__":
     logging.info('Configured Parsl')
     
     # Run the inference function
-    futures = [inference_function(chunk['smiles'].tolist(), identifier=chunk['identifier'].tolist())
+    futures = [inference_function(chunk['smiles'].tolist(), core_count=16, identifier=chunk['identifier'].tolist())
                for chunk in np.array_split(database, len(database) // args.batch_size)]
     logging.info(f'Submitted {len(futures)} tasks')
     

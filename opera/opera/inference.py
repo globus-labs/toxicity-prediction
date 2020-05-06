@@ -51,14 +51,15 @@ def _bad_molecule(smiles: str, cutoff: int = 50) -> Tuple[bool, str]:
 
 
 @python_app()
-def inference_function(smiles, **other_cols):
+def inference_function(smiles, core_count=None, **other_cols):
     """Run inference on a list of smiles using Opera's CLI application"""
     # Measure the start time and record host name
     from datetime import datetime
     from platform import node
     start_time = datetime.utcnow().isoformat()
     hostname = node()
-    core_count = len(os.sched_getaffinity(0))
+    if core_count is None:
+        core_count = len(os.sched_getaffinity(0))
 
     # Determine which molecules are suitable for the pipeline
     skip, skip_reason = zip(*[_bad_molecule(s) for s in smiles])

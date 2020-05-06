@@ -26,16 +26,18 @@ local_config = Config(
 )
 
 config = Config(
+        retries=1,
+        usage_tracking=True,
     executors=[
         HighThroughputExecutor(
             address=address_by_hostname(),
             label="htex",
-            max_workers=1,
+            max_workers=4,
             prefetch_capacity=1,
             provider=CobaltProvider(
                 queue='CVD_Research',
                 account='CVD_Research',
-                launcher=AprunLauncher(overrides="-d 64 --cc depth"),
+                launcher=AprunLauncher(overrides="-d 256 --cc depth -j 4"),
                 walltime='3:00:00',
                 nodes_per_block=4,
                 init_blocks=1,
