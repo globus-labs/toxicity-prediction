@@ -9,7 +9,6 @@ import os
 with open(os.path.join(os.path.dirname(__file__), '..', 'set_envs.sh')) as fp:
     envs = fp.read()
 
-
 local_config = Config(
     executors=[
         HighThroughputExecutor(
@@ -32,23 +31,27 @@ config = Config(
             address=address_by_hostname(),
             label="htex",
             max_workers=1,
-            prefetch_capacity=2,
+            prefetch_capacity=1,
             provider=CobaltProvider(
                 queue='CVD_Research',
                 account='CVD_Research',
                 launcher=AprunLauncher(overrides="-d 64 --cc depth"),
                 walltime='3:00:00',
-                nodes_per_block=64,
+                nodes_per_block=4,
                 init_blocks=1,
                 min_blocks=1,
                 max_blocks=4,
                 scheduler_options='#COBALT --attrs enable_ssh=1',
-                worker_init='''
+                worker_init=f'''
 module load miniconda-3
-source activate /home/lward/exalearn/covid/toxicity-prediction/admet/env
+module load java
+source activate /home/lward/exalearn/covid/toxicity-prediction/opera/env
 export KMP_AFFINITY=disabled
 which python
-                ''',
+
+# Set the environment variables
+{envs}
+''',
                 cmd_timeout=120,
             ),
         ),
